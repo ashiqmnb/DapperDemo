@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|c:\\users\\ashiq_mnb\\source\\repos\\dapperdemo\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|solutionrelative:controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|c:\\users\\ashiq_mnb\\source\\repos\\dapperdemo\\contracts\\icompanyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|solutionrelative:contracts\\icompanyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|c:\\users\\ashiq_mnb\\source\\repos\\dapperdemo\\respository\\companyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|solutionrelative:respository\\companyrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|c:\\users\\ashiq_mnb\\source\\repos\\dapperdemo\\context\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C097BD74-EF0C-4E76-9C39-C2E048EBD364}|DapperDemo.csproj|solutionrelative:context\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1505,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CompanyController.cs",
+              "ToolTip": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAYwJYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:38:50.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Respository\\CompanyRepo.cs",
+              "RelativeDocumentMoniker": "Respository\\CompanyRepo.cs",
+              "ToolTip": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Respository\\CompanyRepo.cs",
+              "RelativeToolTip": "Respository\\CompanyRepo.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAswNMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:30:20.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICompanyRepo.cs",
+              "DocumentMoniker": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Contracts\\ICompanyRepo.cs",
+              "RelativeDocumentMoniker": "Contracts\\ICompanyRepo.cs",
+              "ToolTip": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Contracts\\ICompanyRepo.cs",
+              "RelativeToolTip": "Contracts\\ICompanyRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:30:06.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Context\\DapperContext.cs",
+              "RelativeDocumentMoniker": "Context\\DapperContext.cs",
+              "ToolTip": "C:\\Users\\ashiq_mnb\\source\\repos\\DapperDemo\\Context\\DapperContext.cs",
+              "RelativeToolTip": "Context\\DapperContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T06:26:15.154Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
