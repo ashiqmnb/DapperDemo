@@ -1,19 +1,32 @@
-﻿using DapperDemo.Contracts;
-using DapperDemo.DTO;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-
-namespace DapperDemo.Controllers
+﻿namespace DapperDemo.Controllers
 {
+	using DapperDemo.Contracts;
+	using DapperDemo.DTO;
+	using Microsoft.AspNetCore.Http;
+	using Microsoft.AspNetCore.Mvc;
+
+	/// <summary>
+	/// Defines the <see cref="CompanyController" />
+	/// </summary>
 	[Route("api/[controller]")]
 	[ApiController]
 	public class CompanyController : ControllerBase
 	{
+		/// <summary>
+		/// Defines the _companyRepo
+		/// </summary>
 		private readonly ICompanyRepo _companyRepo;
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="CompanyController"/> class.
+		/// </summary>
+		/// <param name="companyRepo">The companyRepo<see cref="ICompanyRepo"/></param>
 		public CompanyController(ICompanyRepo companyRepo) => _companyRepo = companyRepo;
 
-
+		/// <summary>
+		/// The GetCompanies
+		/// </summary>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpGet]
 		public async Task<IActionResult> GetCompanies()
 		{
@@ -21,16 +34,20 @@ namespace DapperDemo.Controllers
 			{
 				var companies = await _companyRepo.GetCompanies();
 
-				if(companies is null) return NotFound();
+				if (companies is null) return NotFound();
 				return Ok(companies);
 			}
-			catch(Exception ex)
+			catch (Exception ex)
 			{
 				return StatusCode(500, ex.Message);
 			}
 		}
 
-
+		/// <summary>
+		/// The GetCompanyById
+		/// </summary>
+		/// <param name="id">The id<see cref="int"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpGet("{id}", Name = "CompanyById")]
 		public async Task<IActionResult> GetCompanyById(int id)
 		{
@@ -47,9 +64,13 @@ namespace DapperDemo.Controllers
 			}
 		}
 
-
+		/// <summary>
+		/// The AddCompany
+		/// </summary>
+		/// <param name="company">The company<see cref="AddCompanyDTO"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpPost]
-		public async Task<IActionResult> AddCompany([FromBody]AddCompanyDTO company)
+		public async Task<IActionResult> AddCompany([FromBody] AddCompanyDTO company)
 		{
 			try
 			{
@@ -65,8 +86,12 @@ namespace DapperDemo.Controllers
 			}
 		}
 
-
-
+		/// <summary>
+		/// The UpdateCompany
+		/// </summary>
+		/// <param name="id">The id<see cref="int"/></param>
+		/// <param name="company">The company<see cref="UpdateCompanyDTO"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpPut("{id}")]
 		public async Task<IActionResult> UpdateCompany(int id, [FromBody] UpdateCompanyDTO company)
 		{
@@ -84,7 +109,11 @@ namespace DapperDemo.Controllers
 			}
 		}
 
-
+		/// <summary>
+		/// The DeleteCompany
+		/// </summary>
+		/// <param name="id">The id<see cref="int"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteCompany(int id)
 		{
@@ -102,6 +131,11 @@ namespace DapperDemo.Controllers
 			}
 		}
 
+		/// <summary>
+		/// The GetCompanyForEmployee
+		/// </summary>
+		/// <param name="id">The id<see cref="int"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpGet("ByEmployeeId/{id}")]
 		public async Task<IActionResult> GetCompanyForEmployee(int id)
 		{
@@ -118,7 +152,11 @@ namespace DapperDemo.Controllers
 			}
 		}
 
-
+		/// <summary>
+		/// The GetMultipleReslt
+		/// </summary>
+		/// <param name="id">The id<see cref="int"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpGet("{id}/MultipleResult")]
 		public async Task<IActionResult> GetMultipleReslt(int id)
 		{
@@ -135,7 +173,10 @@ namespace DapperDemo.Controllers
 			}
 		}
 
-
+		/// <summary>
+		/// The GetMultipleMapping
+		/// </summary>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpGet("MultipleMapping")]
 		public async Task<IActionResult> GetMultipleMapping()
 		{
@@ -151,7 +192,11 @@ namespace DapperDemo.Controllers
 			}
 		}
 
-
+		/// <summary>
+		/// The CreateMultipleCompanies
+		/// </summary>
+		/// <param name="companies">The companies<see cref="List{AddCompanyDTO}"/></param>
+		/// <returns>The <see cref="Task{IActionResult}"/></returns>
 		[HttpPost("CreateMultipleCompanies")]
 		public async Task<IActionResult> CreateMultipleCompanies([FromBody] List<AddCompanyDTO> companies)
 		{
